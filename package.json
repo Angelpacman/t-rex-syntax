@@ -2,12 +2,21 @@
   "name": "t-rex-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "As colorful as a dinosaur, this syntax was optimized for Scientists developers",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "Scientists",
+    "fortran",
+    "colourful",
+    "fresh",
+    "minimalist",
+    "python",
+    "functions",
+    "dinosaur",
+    "t-rex"
   ],
-  "repository": "https://github.com/atom/t-rex-syntax",
+  "repository": "https://github.com/Angelpacman/t-rex-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
