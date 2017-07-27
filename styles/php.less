@@ -1,0 +1,98 @@
+.php{
+
+  &.meta {
+    &.class {
+      color: @yellow;
+    }
+    &.function-call{
+      color: @orange;
+      &.arguments{
+        color: @magenta;
+        &.begin,
+        &.end{
+          color:white;
+        }
+      }
+    }
+  }
+
+  &.support{
+    &.class{
+      color:@red;
+    }
+  }
+
+  &.storage {
+    color: @purple;
+  }
+
+  &.variable {
+    color: @red;
+  }
+
+  &.entity{
+    &.name{
+      color: @orange;
+    }
+    &.function{
+       color: @orange;
+    }
+    &.other{
+      color:white;
+      &.inherited-class{
+        color:white;
+      }
+    }
+  }
+
+  &.object {
+    .string.unquoted {
+      color: lighten(@green, 10%);
+    }
+  }
+
+  &.keyword.control {
+    color: @altblue;
+    &.flow {
+      color: @orange;
+    }
+  }
+
+  &.decimal{
+    color:white;
+  }
+
+  &.numeric{
+    color: white;
+  }
+
+  &.punctuation{
+    &.section{
+      &.scope{
+        &.begin,
+        &.end{
+          color:white
+        }
+      }
+    }
+    &.embedded{
+      &.begin,
+      &.end{
+        color:white
+      }
+    }
+    &.arguments{
+      color:white;
+    }
+    &.definition{
+      &.arguments{
+        color:@magenta;
+        &.begin,
+        &.end{
+          color:white;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,85 @@
+.python{
+
+  &.meta {
+    &.class {
+      color: @yellow;
+    }
+    &.function-call{
+      color: @orange;
+      &.arguments{
+        color: @altblue;   //antes @magenta
+        &.begin,
+        &.end{
+          color:white;  //antes white
+        }
+      }
+    }
+  }
+
+  &.support{
+    &.class{
+      color:@red;
+    }
+  }
+
+  &.storage {
+    color: @purple;
+  }
+
+  &.variable {
+    color: @red;
+  }
+
+  &.entity{
+    &.name{
+      color: @orange;
+    }
+    &.function{
+       color: @orange;
+    }
+    &.other{
+      color:white; //antes white
+    }
+  }
+
+  &.object {
+    .string.unquoted {
+      color: lighten(@green, 10%);
+    }
+  }
+
+  &.keyword.control {
+    color: @blue;   //antes @altblue
+    &.flow {
+      color: @orange;  //antes @orange
+    }
+  }
+
+  &.decimal{
+    color:@blue; //antes white
+  }
+
+  &.punctuation{
+    &.arguments{
+      color:@purple;
+    }
+
+    &.definition{
+      &.arguments{
+        color:@magenta;
+        &.begin,
+        &.end{
+          color:white;
+        }
+      }
+      &.inheritance{
+        color:@magenta;
+        &.begin,
+        &.end{
+          color:white;
+        }
+      }
+    }
+  }
+
+}

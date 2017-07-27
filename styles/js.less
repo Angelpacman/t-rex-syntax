@@ -1,0 +1,88 @@
+.js,
+.jsx {
+
+  &.meta {
+    &.function-call{
+      color: @orange;
+      &.arguments{
+        color: @magenta;
+        &.begin,
+        &.end{
+          color:white;
+        }
+      }
+    }
+  }
+
+  &.storage {
+    color: @purple;
+  }
+
+  &.variable {
+    color: @red;
+  }
+
+  &.entity{
+    &.name{
+      color: @orange;
+    }
+    &.function{
+       color: @orange;
+    }
+    &.other{
+      color:white;
+    }
+  }
+
+  &.object {
+    .string.unquoted {
+      color: lighten(@green, 10%);
+    }
+  }
+
+  &.keyword.control {
+    color: @altblue;
+    &.flow {
+      color: @orange;
+    }
+  }
+
+  &.decimal{
+    color:white;
+  }
+
+  &.numeric{
+    color: white;
+  }
+
+  &.punctuation{
+    &.embedded{
+      &.begin,
+      &.end{
+        color:white
+      }
+    }
+    &.arguments{
+      color:white;
+    }
+    &.definition{
+      &.arguments{
+        color:@magenta;
+        &.begin,
+        &.end{
+          color:white;
+        }
+      }
+    }
+  }
+
+  .jsx {
+
+    .punctuation.embedded.begin.jsx,
+    .punctuation.embedded.end.jsx {
+      color: white;
+    }
+
+  }
+
+}
