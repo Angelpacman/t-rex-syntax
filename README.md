@@ -12,10 +12,10 @@ and Source-code-pro font.
 
 ### Fortran language demo
 
-https://raw.githubusercontent.com/Angelpacman/t-rex-syntax/master/fortran.png
+![Screenshot](https://raw.githubusercontent.com/Angelpacman/t-rex-syntax/master/fortran.png)
 
 ---
 
 ### Python language demo
 
-https://raw.githubusercontent.com/Angelpacman/t-rex-syntax/master/python.png
+![Screenshot](https://raw.githubusercontent.com/Angelpacman/t-rex-syntax/master/python.png)
