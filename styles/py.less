@@ -7,10 +7,10 @@
     &.function-call{
       color: @orange;
       &.arguments{
-        color: @altblue;   //antes @magenta
+        color: @blue;   //antes @magenta
         &.begin,
         &.end{
-          color:white;  //antes white
+          color: white;  //antes white
         }
       }
     }
@@ -23,11 +23,11 @@
   }
 
   &.storage {
-    color: @purple;
+    color: @blue;
   }
 
   &.variable {
-    color: @red;
+    color: @green;   //@red
   }
 
   &.entity{
@@ -49,7 +49,7 @@
   }
 
   &.keyword.control {
-    color: @blue;   //antes @altblue
+    color: @purple;   //antes @altblue
     &.flow {
       color: @orange;  //antes @orange
     }
@@ -61,7 +61,7 @@
 
   &.punctuation{
     &.arguments{
-      color:@purple;
+      color:@light-orange;  //@purple
     }
 
     &.definition{
@@ -69,17 +69,189 @@
         color:@magenta;
         &.begin,
         &.end{
-          color:white;
+          color:@light-gray;   //white
         }
       }
       &.inheritance{
         color:@magenta;
         &.begin,
         &.end{
-          color:white;
+          color:white; //white
         }
       }
     }
   }
 
 }
+
+/*.source.python {
+  .entity {
+    color: @orange;
+    }
+    &.name.function {
+      color: @orange;
+    }
+    // class name color
+    &.name.type.class.python {
+      color: @orange;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    &.other {
+      color: @yellow;
+    }
+    &.class {
+        color: @red;
+    }
+  //}
+
+  .comment {
+      &.line.number-sign.python {
+          color: darken(@light-gray, 5%);
+      }
+  }
+
+  .constant {
+      color: @orange;
+
+      &.language.python {
+          color: @purple;
+          font-style: normal;
+      }
+      &.character.format.placeholder.other.python {
+          color: @orange;
+      }
+      &.other.caps.python {
+          color: @cyan;
+      }
+      &.numeric {
+          color: @orange;
+          font-style: normal;
+      }
+  }
+
+  .keyword {
+      &.control {
+          color: @blue;
+      }
+      &.operator.logical.python,
+      &.operator.comparison.python,
+      &.operator.assignment.python,
+      &.operator.arithmetic.python {
+          color: @magenta;
+      }
+      &.codetag {
+          color: lighten(@syntax-text-color, 10%);
+          background-color: @aftermidnight;
+          font-weight: bold;
+      }
+  }
+
+  .meta {
+      // function name color
+      .function.python {
+          color: @cyan;
+          font-style: normal;
+      }
+      .function.parameter.python {
+          font-style: normal;
+      }
+      .function-call-python {
+          color: @orange;
+          .arguments{
+            color: @altblue;
+            &.begin,
+            &.end{
+              color:white;  //antes white
+            }
+          }
+      }
+      // class
+      .class.python {
+          color: @orange;
+          font-style: italic;
+          font-weight: bold;
+      }
+      .class.inheritance.python {
+          font-weight: normal;
+      }
+      &.require {
+          color: @red;
+      }
+  }
+
+  .punctuation {
+      &.definition.inheritance {
+          color: @magenta;
+      }
+      // quotation marks from doc string
+      &.definition.string {
+          color: @green;
+          font-style: normal;
+          font-weight: bolder;
+      }
+      &.definition.parameters {
+          color: @yellow;
+          font-style: normal;
+      }
+      &.section.function {
+          font-style: normal;
+      }
+  }
+
+  .storage {
+      color:@purple;
+
+      &.type.function.python {
+          color: @orange;
+          font-style: italic;
+      }
+      &.class.inheritance {
+          color: @yellow;
+      }
+  }
+
+  .string {
+      &.quoted.docstring.multi {
+          color: lighten(@syntax-text-color, 10%);
+          font-style: italic;
+      }
+      &.quoted.single {
+          color: @green;
+      }
+      &.regexp {
+          color: @red;
+      }
+  }
+
+  .support {
+      &.function.magic.python {
+          // color: @green3;
+          color: lighten(@light-orange, 10%);
+          font-weight: bold;
+          font-style: normal;
+      }
+      &.variable.magic.python {
+          color: @green;
+      }
+      &.function.builtin,
+      &.type.python {
+          color: @blue;
+      }
+  }
+
+  .variable {
+      &.parameter.function.language.python {
+          color: @red;
+      }
+      // self variable
+      &.language.special.self.python {
+          color: @yellow;
+          font-style: italic;
+      }
+      &.parameter.function-call.python {
+          color: @orange;
+      }
+  }
+}*/
