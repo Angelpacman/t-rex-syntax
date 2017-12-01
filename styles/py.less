@@ -5,9 +5,9 @@
       color: @yellow;
     }
     &.function-call{
-      color: @orange;
+      color: @purple;    //orange
       &.arguments{
-        color: @blue;   //antes @magenta
+        color: @blue;   //antes @magenta //@blue
         &.begin,
         &.end{
           color: white;  //antes white
@@ -23,22 +23,42 @@
   }
 
   &.storage {
-    color: @blue;
+    color: @altblue;
   }
 
   &.variable {
-    color: @green;   //@red
-  }
+      &.parameter,
+      &.language{
+      color: @green;   //@red //@green
+      }
+
+      //&.function-call.python{
+        //  color: @purple;
+      //}
+
+    }
 
   &.entity{
     &.name{
-      color: @orange;
+      color: @green;   //@orange
+       &.tag{
+
+           &.backreference.regexp{
+               color:@green;
+           }
+
+            &.named.backreference.regexp{
+            color: @purple;
+            }
+        }
     }
+
     &.function{
-       color: @orange;
+       color: @cyan;  //antes @orange
     }
-    &.other{
-      color:white; //antes white
+
+    &.other.inherited-class.python{
+      color:@purple;
     }
   }
 
