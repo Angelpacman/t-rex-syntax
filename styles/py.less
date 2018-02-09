@@ -1,277 +1,651 @@
 .python{
-
-  &.meta {
-    &.class {
-      color: @yellow;
+    &.comment.line.number-sign.python{
+        color: @green;   //@red //@green
     }
-    &.function-call{
-      color: @purple;    //orange
-      &.arguments{
-        color: @blue;   //antes @magenta //@blue
-        &.begin,
-        &.end{
-          color: white;  //antes white
-        }
-      }
+    &.comment.regexp{
+        color: @green;   //@red //@green
     }
-  }
-
-  &.support{
-    &.class{
-      color:@red;
+    &.comment.typehint.directive.notation.python{
+        color: @green;   //@red //@green
     }
-  }
-
-  &.storage {
-    color: @altblue;
-  }
-
-  &.variable {
-      &.parameter,
-      &.language{
-      color: @green;   //@red //@green
-      }
-
-      //&.function-call.python{
-        //  color: @purple;
-      //}
-
+    &.comment.typehint.ignore.notation.python{
+        color: @green;   //@red //@green
+    }
+    &.comment.typehint.punctuation.notation.python{
+        color: @green;   //@red //@green
+    }
+    &.comment.typehint.type.notation.python{
+        color: @green;   //@red //@green
+    }
+    &.comment.typehint.variable.notation.python{
+        color: @green;   //@red //@green
     }
 
-  &.entity{
-    &.name{
-      color: @green;   //@orange
-       &.tag{
 
-           &.backreference.regexp{
-               color:@green;
-           }
-
-            &.named.backreference.regexp{
-            color: @purple;
-            }
-        }
+    &.constant.character.escape.python{
+        color: @orange;
     }
 
-    &.function{
-       color: @cyan;  //antes @orange
+    &.constant.character.escape.regexp{
+        color: @orange;
     }
 
-    &.other.inherited-class.python{
-      color:@purple;
-    }
-  }
-
-  &.object {
-    .string.unquoted {
-      color: lighten(@green, 10%);
-    }
-  }
-
-  &.keyword.control {
-    color: @purple;   //antes @altblue
-    &.flow {
-      color: @orange;  //antes @orange
-    }
-  }
-
-  &.decimal{
-    color:@blue; //antes white
-  }
-
-  &.punctuation{
-    &.arguments{
-      color:@light-orange;  //@purple
+    &.constant.character.format.placeholder.other.python{
+        color: @orange;
     }
 
-    &.definition{
-      &.arguments{
+    &.constant.character.set.regexp{
+        color: @orange;
+    }
+
+    &.constant.character.unicode.regexp{
+        color: @orange;
+    }
+
+    &.constant.language.python{
+        color: @orange;
+    }
+
+    &.constant.numeric.bin.python{
+        color: @orange;
+    }
+
+    &.constant.numeric.dec.python{
+        color: @orange;
+    }
+
+    &.constant.numeric.float.python{
+        color: @orange;
+    }
+
+    &.constant.numeric.hex.python{
+        color: @orange;
+    }
+
+    &.constant.numeric.oct.python{
+        color: @orange;
+    }
+
+    &.constant.numeric.python{
+        color: @orange;
+    }
+
+    &.constant.other.caps.python{
+        color: @orange;
+    }
+
+    &.constant.other.ellipsis.python{
+        color: @orange;
+    }
+
+    &.constant.other.set.regexp{
+        color: @orange;
+    }
+
+
+
+    &.entity.name.function.decorator.python {
+        color: @green; //altblue  @showplot
+    }
+
+    &.entity.name.function.python {
+        color: @purple;     //purple
+    }
+
+    &.entity.name.tag.backreference.regexp {
+        color: @lime;
+    }
+
+    &.entity.name.tag.named.backreference.regexp {
+        color: @light-orange;
+    }
+
+    &.entity.name.tag.named.group.regexp {
+        color: @light-orange;
+    }
+
+    &.entity.name.type.class.python {
+        color: @light-orange;
+    }
+
+    &.entity.other.inherited-class.python {
+        color: @light-orange;
+    }
+
+
+
+    &.invalid.deprecated.backtick.python{
+        color:@red;
+    }
+
+    &.invalid.deprecated.prefix.python{
+        color:@red;
+    }
+
+    &.invalid.deprecated.semicolon.python{
+        color:@red;
+    }
+
+    &.invalid.illegal.annotation.python{
+        color:@red;
+    }
+
+    &.invalid.illegal.brace.python{
+        color:@red;
+    }
+
+    &.invalid.illegal.dec.python{
+        color:@red;
+    }
+
+    &.invalid.illegal.decorator.python{
+        color:@red;
+    }
+
+    &.invalid.illegal.line.continuation.python{
+        color:@red;
+    }
+
+    &.invalid.illegal.name.python{
+        color:@red;
+    }
+
+    &.invalid.illegal.newline.python{
+        color:@red;
+    }
+
+    &.invalid.illegal.operator.python{
+        color:@red;
+    }
+
+    &.invalid.illegal.prefix.python{
+        color:@red;
+    }
+
+
+
+    &.keyword.codetag.notation.python{
+        color:@purple;     //purple
+    }
+
+    &.keyword.control.flow.python{
+        color:@green;   //green  if return
+    }
+
+    &.keyword.control.import.python{
+        color:@purple;
+    }
+
+    &.keyword.illegal.name.python{
+        color:@purple;
+    }
+
+    &.keyword.operator.arithmetic.python{
         color:@magenta;
-        &.begin,
-        &.end{
-          color:@light-gray;   //white
-        }
-      }
-      &.inheritance{
-        color:@magenta;
-        &.begin,
-        &.end{
-          color:white; //white
-        }
-      }
     }
-  }
 
+    &.keyword.operator.assignment.python{
+        color:@magenta;
+    }
+
+    &.keyword.operator.bitwise.python{
+        color:@magenta;
+    }
+
+    &.keyword.operator.comparison.python{
+        color:@lime;
+    }
+
+    &.keyword.operator.conditional.negative.regexp{
+        color:@magenta;
+    }
+
+    &.keyword.operator.conditional.regexp{
+        color:@magenta;
+    }
+
+    &.keyword.operator.disjunction.regexp{
+        color:@magenta;
+    }
+
+    &.keyword.operator.logical.python{
+        color:@magenta;
+    }
+
+    &.keyword.operator.lookahead.negative.regexp{
+        color:@magenta;
+    }
+
+    &.keyword.operator.lookahead.regexp{
+        color:@magenta;
+    }
+
+    &.keyword.operator.lookbehind.negative.regexp{
+        color:@magenta;
+    }
+
+    &.keyword.operator.lookbehind.regexp{
+        color:@magenta;
+    }
+
+    &.keyword.operator.negation.regexp{
+        color:@magenta;
+    }
+
+    &.keyword.operator.python{
+        color:@magenta;
+    }
+
+    &.keyword.operator.quantifier.regexp{
+        color:@magenta;
+    }
+
+    &.keyword.operator.unpacking.arguments.python{
+        color:@magenta;
+    }
+
+    &.keyword.operator.unpacking.parameter.python{
+        color:@magenta;
+    }
+
+
+
+    &.meta.backreference.named.regexp{
+        color:@blue;
+    }
+
+    &.meta.backreference.regexp{
+        color:@blue;
+    }
+
+    &.meta.character.set.regexp{
+        color:@blue;
+    }
+
+    &.meta.class.inheritance.python{
+        color:@blue;
+    }
+
+    &.meta.class.python{
+        color:@blue;
+    }
+
+    &.meta.fstring.python{
+        color:@blue;
+    }
+
+    &.meta.function-call.generic.python{
+        color:@purple;
+    }
+
+    &.meta.function-call.python{
+        color:@blue;
+    }
+
+    &.meta.function.decorator.python{
+        color:@blue;
+    }
+
+    &.meta.function.parameters.python{
+        color:@blue;
+    }
+
+    &.meta.function.python{
+        color:@blue;
+    }
+
+    &.meta.item-access.python{
+        color:@blue;
+    }
+
+    &.meta.lambda-function.python{
+        color:@blue;
+    }
+
+    &.meta.named.regexp{
+        color:@blue;
+    }
+
+    &.meta.typehint.comment.python{
+        color:@blue;
+    }
+
+
+
+    &.punctuation.character.set.begin.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.character.set.end.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.comment.begin.regexp{
+        color:@green;  //@purple
+    }
+
+    &.punctuation.comment.end.regexp{
+        color:@green;  //@purple
+    }
+
+    &.punctuation.definition.arguments.begin.python{
+        color:@very-light-gray;  //@purple
+    }
+
+    &.punctuation.definition.arguments.end.python{
+        color:@very-light-gray;  //@purple
+    }
+
+    &.punctuation.definition.comment.python{
+        color:@gray;  //@purple
+    }
+
+    &.punctuation.definition.dict.begin.python{
+        color:@red;  //@lime
+    }
+
+    &.punctuation.definition.dict.end.python{
+        color:@red;  //@lime
+    }
+
+    &.punctuation.definition.inheritance.begin.python{
+        color:@blue;  //@purple
+    }
+
+    &.punctuation.definition.inheritance.end.python{
+        color:@blue;  //@light-orange
+    }
+
+    &.punctuation.definition.list.begin.python{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.definition.list.end.python{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.definition.parameters.begin.python{
+        color:@light-orange;  //@purple este es para los atributos de un modulo
+    }
+
+    &.punctuation.definition.parameters.end.python{
+        color:@light-orange;  //@purple este es para los atributos de un modulo
+    }
+
+    &.punctuation.definition.string.begin.python{
+        color:@lime;  //@lime
+    }
+
+    &.punctuation.definition.string.end.python{
+        color:@lime;  //@lime
+    }
+
+    &.punctuation.parenthesis.backreference.named.begin.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.parenthesis.backreference.named.end.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.parenthesis.begin.python{
+        color:@purple;  //@purple parentesis dentro de funcion
+    }
+
+    &.punctuation.parenthesis.begin.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.parenthesis.conditional.begin.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.parenthesis.conditional.end.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.parenthesis.end.python{
+        color:@purple;  //@purple  parentesis dentro de funcion
+    }
+
+    &.punctuation.parenthesis.end.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.parenthesis.lookahead.begin.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.parenthesis.lookahead.end.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.parenthesis.lookbehind.begin.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.parenthesis.lookbehind.end.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.parenthesis.named.begin.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.parenthesis.named.end.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.parenthesis.non-capturing.begin.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.parenthesis.non-capturing.end.regexp{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.section.class.begin.python{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.section.function.begin.python{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.section.function.lambda.begin.python{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.separator.annotation.python{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.separator.annotation.result.python{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.separator.arguments.python{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.separator.colon.python{
+        color:@very-light-gray;  //@purple very-light-gray
+    }
+
+    &.punctuation.separator.continuation.line.python{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.separator.dict.python{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.separator.element.python{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.separator.inheritance.python{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.separator.parameters.python{
+        color:@red;  //@purple
+    }
+
+    &.punctuation.separator.period.python{
+        color:@light-orange;  //@purple
+    }
+
+    &.punctuation.separator.slice.python{
+        color:@green;  //@purple     //dos puntos dentro de los corcchetes
+    }
+
+
+
+    &.storage.modifier.declaration.python{
+        color: @cyan;
+    }
+    &.storage.modifier.flag.regexp{
+        color: @cyan;
+    }
+    &.storage.type.class.python{
+        color: @cyan;
+    }
+    &.storage.type.format.python{
+        color: @cyan;
+    }
+    &.storage.type.function.async.python{
+        color: @cyan;
+    }
+    &.storage.type.function.lambda.python{
+        color: @cyan;
+    }
+    &.storage.type.function.python{
+        color: @cyan;
+    }
+    &.storage.type.imaginary.number.python{
+        color: @cyan;
+    }
+    &.storage.type.number.python{
+        color: @cyan;
+    }
+    &.storage.type.string.python{
+        color: @cyan;
+    }
+
+
+    &.string.interpolated.python{
+        color: @lime;
+    }
+    &.string.quoted.binary.multi.python{
+        color: @lime;
+    }
+    &.string.quoted.binary.single.python{
+        color: @lime;
+    }
+    &.string.quoted.docstring.multi.python{
+        color: @aqua;
+    }
+    &.string.quoted.docstring.raw.multi.python{
+        color: @aqua;
+    }
+    &.string.quoted.docstring.raw.single.python{
+        color: @aqua;
+    }
+    &.string.quoted.docstring.single.python{
+        color: @aqua;
+    }
+    &.string.quoted.multi.python{
+        color: @aqua;
+    }
+    &.string.quoted.raw.binary.multi.python{
+        color: @lime;
+    }
+    &.string.quoted.raw.binary.single.python{
+        color: @lime;
+    }
+    &.string.quoted.raw.multi.python{
+        color: @aqua;
+    }
+    &.string.quoted.raw.single.python{
+        color: @lime;
+    }
+    &.string.quoted.single.python{
+        color: @aqua;
+    }
+    &.string.regexp.quoted.multi.python{
+        color: @aqua;
+    }
+    &.string.regexp.quoted.single.python{
+        color: @aqua;
+    }
+
+
+    &.support.function.builtin.python{
+        color: @cyan;
+    }
+    &.support.function.magic.python{
+        color: @cyan;
+    }
+
+    &.support.other.escape.special.regexp{
+        color: @cyan;
+    }
+
+    &.support.other.match.any.regexp{
+        color: @cyan;
+    }
+
+    &.support.other.match.begin.regexp{
+        color: @cyan;
+    }
+
+    &.support.other.match.end.regexp{
+        color: @cyan;
+    }
+
+    &.support.other.parenthesis.regexp{
+        color: @cyan;
+    }
+
+    &.support.type.exception.python{
+        color: @cyan;
+    }
+
+    &.support.type.metaclass.python{
+        color: @cyan;
+    }
+
+    &.support.type.python{
+        color: @cyan;
+    }
+
+    &.support.variable.magic.python{
+        color: @cyan;
+    }
+
+    &.variable.language.special.cls.python{
+        color:@green;
+    }
+    &.variable.language.special.self.python{
+        color:@green;
+    }
+    &.variable.legacy.builtin.python{
+        color:@green;
+    }
+    &.variable.parameter.class.python{
+        color:@green;
+    }
+    &.variable.parameter.function-call.python{
+        color:@green;
+    }
+    &.variable.parameter.function.language.python{
+        color:@green;
+    }
+    &.variable.parameter.function.language.special.cls.python{
+        color:@green;
+    }
+    &.variable.parameter.function.language.special.self.python{
+        color:@green;
+    }
 }
-
-/*.source.python {
-  .entity {
-    color: @orange;
-    }
-    &.name.function {
-      color: @orange;
-    }
-    // class name color
-    &.name.type.class.python {
-      color: @orange;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    &.other {
-      color: @yellow;
-    }
-    &.class {
-        color: @red;
-    }
-  //}
-
-  .comment {
-      &.line.number-sign.python {
-          color: darken(@light-gray, 5%);
-      }
-  }
-
-  .constant {
-      color: @orange;
-
-      &.language.python {
-          color: @purple;
-          font-style: normal;
-      }
-      &.character.format.placeholder.other.python {
-          color: @orange;
-      }
-      &.other.caps.python {
-          color: @cyan;
-      }
-      &.numeric {
-          color: @orange;
-          font-style: normal;
-      }
-  }
-
-  .keyword {
-      &.control {
-          color: @blue;
-      }
-      &.operator.logical.python,
-      &.operator.comparison.python,
-      &.operator.assignment.python,
-      &.operator.arithmetic.python {
-          color: @magenta;
-      }
-      &.codetag {
-          color: lighten(@syntax-text-color, 10%);
-          background-color: @aftermidnight;
-          font-weight: bold;
-      }
-  }
-
-  .meta {
-      // function name color
-      .function.python {
-          color: @cyan;
-          font-style: normal;
-      }
-      .function.parameter.python {
-          font-style: normal;
-      }
-      .function-call-python {
-          color: @orange;
-          .arguments{
-            color: @altblue;
-            &.begin,
-            &.end{
-              color:white;  //antes white
-            }
-          }
-      }
-      // class
-      .class.python {
-          color: @orange;
-          font-style: italic;
-          font-weight: bold;
-      }
-      .class.inheritance.python {
-          font-weight: normal;
-      }
-      &.require {
-          color: @red;
-      }
-  }
-
-  .punctuation {
-      &.definition.inheritance {
-          color: @magenta;
-      }
-      // quotation marks from doc string
-      &.definition.string {
-          color: @green;
-          font-style: normal;
-          font-weight: bolder;
-      }
-      &.definition.parameters {
-          color: @yellow;
-          font-style: normal;
-      }
-      &.section.function {
-          font-style: normal;
-      }
-  }
-
-  .storage {
-      color:@purple;
-
-      &.type.function.python {
-          color: @orange;
-          font-style: italic;
-      }
-      &.class.inheritance {
-          color: @yellow;
-      }
-  }
-
-  .string {
-      &.quoted.docstring.multi {
-          color: lighten(@syntax-text-color, 10%);
-          font-style: italic;
-      }
-      &.quoted.single {
-          color: @green;
-      }
-      &.regexp {
-          color: @red;
-      }
-  }
-
-  .support {
-      &.function.magic.python {
-          // color: @green3;
-          color: lighten(@light-orange, 10%);
-          font-weight: bold;
-          font-style: normal;
-      }
-      &.variable.magic.python {
-          color: @green;
-      }
-      &.function.builtin,
-      &.type.python {
-          color: @blue;
-      }
-  }
-
-  .variable {
-      &.parameter.function.language.python {
-          color: @red;
-      }
-      // self variable
-      &.language.special.self.python {
-          color: @yellow;
-          font-style: italic;
-      }
-      &.parameter.function-call.python {
-          color: @orange;
-      }
-  }
-}*/
