@@ -1,85 +1,85 @@
-.js,
-.jsx {
+.syntax--js,
+.syntax--jsx {
 
-  &.meta {
-    &.function-call{
+  &.syntax--meta {
+    &.syntax--function-call{
       color: @orange;
-      &.arguments{
+      &.syntax--arguments{
         color: @magenta;
-        &.begin,
-        &.end{
+        &.syntax--begin,
+        &.syntax--end{
           color:white;
         }
       }
     }
   }
 
-  &.storage {
+  &.syntax--storage {
     color: @purple;
   }
 
-  &.variable {
+  &.syntax--variable {
     color: @red;
   }
 
-  &.entity{
-    &.name{
+  &.syntax--entity{
+    &.syntax--syntax--name{
       color: @orange;
     }
-    &.function{
+    &.syntax--function{
        color: @orange;
     }
-    &.other{
+    &.syntax--other{
       color:white;
     }
   }
 
-  &.object {
-    .string.unquoted {
+  &.syntax--object {
+    .syntax--string.syntax--unquoted {
       color: lighten(@green, 10%);
     }
   }
 
-  &.keyword.control {
+  &.syntax--keyword.syntax--control {
     color: @altblue;
-    &.flow {
+    &.syntax--flow {
       color: @orange;
     }
   }
 
-  &.decimal{
+  &.syntax--decimal{
     color:white;
   }
 
-  &.numeric{
+  &.syntax--numeric{
     color: white;
   }
 
-  &.punctuation{
-    &.embedded{
-      &.begin,
-      &.end{
+  &.syntax--punctuation{
+    &.syntax--embedded{
+      &.syntax--begin,
+      &.syntax--end{
         color:white
       }
     }
-    &.arguments{
+    &.syntax--arguments{
       color:white;
     }
-    &.definition{
-      &.arguments{
+    &.syntax--definition{
+      &.syntax--arguments{
         color:@magenta;
-        &.begin,
-        &.end{
+        &.syntax--begin,
+        &.syntax--end{
           color:white;
         }
       }
     }
   }
 
-  .jsx {
+  .syntax--jsx {
 
-    .punctuation.embedded.begin.jsx,
-    .punctuation.embedded.end.jsx {
+    .syntax--punctuation.syntax--embedded.syntax--begin.syntax--jsx,
+    .syntax--punctuation.syntax--embedded.syntax--end.syntax--jsx {
       color: white;
     }
 
