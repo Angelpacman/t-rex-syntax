@@ -1,94 +1,94 @@
-.php{
+.syntax--php{
 
-  &.meta {
-    &.class {
+  &.syntax--meta {
+    &.syntax--class {
       color: @yellow;
     }
-    &.function-call{
+    &.syntax--function-call{
       color: @orange;
-      &.arguments{
+      &.syntax--arguments{
         color: @magenta;
-        &.begin,
-        &.end{
+        &.syntax--begin,
+        &.syntax--end{
           color:white;
         }
       }
     }
   }
 
-  &.support{
-    &.class{
+  &.syntax--support{
+    &.syntax--class{
       color:@red;
     }
   }
 
-  &.storage {
+  &.syntax--storage {
     color: @purple;
   }
 
-  &.variable {
+  &.syntax--variable {
     color: @red;
   }
 
-  &.entity{
-    &.name{
+  &.syntax--entity{
+    &.syntax--name{
       color: @orange;
     }
-    &.function{
+    &.syntax--function{
        color: @orange;
     }
-    &.other{
+    &.syntax--other{
       color:white;
-      &.inherited-class{
+      &.syntax--inherited-class{
         color:white;
       }
     }
   }
 
-  &.object {
-    .string.unquoted {
+  &.syntax--object {
+    .syntax--string.syntax--unquoted {
       color: lighten(@green, 10%);
     }
   }
 
-  &.keyword.control {
+  &.syntax--keyword.syntax--control {
     color: @altblue;
-    &.flow {
+    &.syntax--flow {
       color: @orange;
     }
   }
 
-  &.decimal{
+  &.syntax--decimal{
     color:white;
   }
 
-  &.numeric{
+  &.syntax--numeric{
     color: white;
   }
 
-  &.punctuation{
-    &.section{
-      &.scope{
-        &.begin,
-        &.end{
+  &.syntax--punctuation{
+    &.syntax--section{
+      &.syntax--scope{
+        &.syntax--begin,
+        &.syntax--end{
           color:white
         }
       }
     }
-    &.embedded{
-      &.begin,
-      &.end{
+    &.syntax--embedded{
+      &.syntax--begin,
+      &.syntax--end{
         color:white
       }
     }
-    &.arguments{
+    &.syntax--arguments{
       color:white;
     }
-    &.definition{
-      &.arguments{
+    &.syntax--definition{
+      &.syntax--arguments{
         color:@magenta;
-        &.begin,
-        &.end{
+        &.syntax--begin,
+        &.syntax--end{
           color:white;
         }
       }
